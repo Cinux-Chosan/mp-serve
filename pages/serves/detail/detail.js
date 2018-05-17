@@ -46,7 +46,7 @@ Page({
 
   inputDesc(e) {
     this.setData({
-      desc: e.detail.value.substr(0, this.data.nMaxDesc)
+      desc: e.detail.value
     })
   },
 
