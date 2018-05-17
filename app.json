@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/personal/personal",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/statistics/statistics",
+    "pages/messages/messages",
+    "pages/serves/index/index",
+    "pages/serves/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#409e35",
+    "list": [
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计数据"
+      },
+      {
+        "pagePath": "pages/serves/index/index",
+        "text": "服务列表"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "消息通知"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

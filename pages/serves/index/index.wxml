@@ -1,0 +1,13 @@
+<!--pages/serves/serves.wxml-->
+<view class="weui-grids">
+  <block wx:for="{{grids}}" wx:key="*this">
+    <navigator url="/pages/serves/detail/detail?serveid={{item}}" class="weui-grid serve-item" hover-class="weui-grid_active">
+      <image class="serve-item__cover" src="http://seopic.699pic.com/photo/50082/8522.jpg_wh1200.jpg" />
+      <!-- <view class="serve-item__label text-center">Grid</view> -->
+    </navigator>
+  </block>
+  <navigator url="/pages/serves/detail/detail" class="weui-grid serve-item serve_add text-center" hover-class="weui-grid_active">
+    <icon class="iconfont serve_add__icon"></icon>
+    <text>添加</text>
+  </navigator>
+</view>

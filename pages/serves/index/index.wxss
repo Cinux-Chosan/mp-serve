@@ -1,0 +1,35 @@
+/* pages/serves/serves.wxss */
+
+.serve-item{
+  height: 96px;
+  padding: 0;
+}
+
+.serve-item__cover{
+  width: 100%;
+  height: 100%;
+}
+
+.serve-item__label{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.serve_add{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serve_add__icon{
+  display: block;
+  font-size: 30px;
+}
+
+.serve_add__icon::before{
+  content: "\e603";
+  vertical-align: bottom;
+}

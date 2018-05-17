@@ -1,0 +1,55 @@
+/**app.wxss**/
+
+@import './statics/css/iconfont.wxss';
+@import './statics/css/weui.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+
+
+.flex{
+  display: flex;
+}
+
+.flex-all-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start-center{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-center-start{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.color-eee{
+  color: #ccc;
+}
+
+page{
+  background: #eee;
+}
+
+.text-center{
+  text-align: center;
+}

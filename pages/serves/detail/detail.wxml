@@ -1,0 +1,80 @@
+<!--pages/serves/detail/detail.wxml-->
+<!-- <text>{{serveid}}</text>
+
+
+<swiper indicator-dots="{{true}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swipers}}">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image swiper-item"/>
+    </swiper-item>
+  </block>
+</swiper> -->
+
+<view class="weui-cells__title">标题</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__bd">
+      <input class="weui-input" maxlength="{{nMaxTitle}}" placeholder="请输入标题，最长不超过20个字" />
+    </view>
+  </view>
+</view>
+
+<view class="weui-cells__title">介绍文字</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" value="{{desc}}" bindinput="inputDesc" maxlength="{{nMaxDesc}}" placeholder="请输入服务简介" style="height: 3.3em" />
+      <view class="weui-textarea-counter">{{desc.length}}/{{nMaxDesc}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<!-- ////// -->
+
+
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-uploader">
+          <view class="weui-uploader__hd">
+            <view class="weui-uploader__title">轮播图片上传</view>
+            <view class="weui-uploader__info">{{swipers.length}}/{{nMaxSwiper}}</view>
+          </view>
+          <view class="weui-uploader__bd">
+            <view class="weui-uploader__files" id="uploaderFiles">
+              <block wx:for="{{swipers}}" wx:key="*this">
+                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                  <icon class="iconfont delete-swiper" catchtap="deleteSwiper" data-index="{{index}}"></icon>
+                  <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                </view>
+              </block>
+
+              <!-- 上传失败示例  -->
+              <!-- <view class="weui-uploader__file weui-uploader__file_status">
+                <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                <view class="weui-uploader__file-content">
+                  <icon type="warn" size="23" color="#F43530"></icon>
+                </view>
+              </view> -->
+
+               <!-- 上传进度示例  -->
+               <!-- <view class="weui-uploader__file weui-uploader__file_status">
+                <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                <view class="weui-uploader__file-content">50%</view>
+              </view> -->
+              
+            </view>
+            <view class="weui-uploader__input-box" wx:if="{{swipers.length < 3}}">
+              <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
