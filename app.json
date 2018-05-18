@@ -3,6 +3,8 @@
     "pages/personal/personal",
     "pages/logs/logs",
     "pages/index/index",
+    "pages/tasks/index/index",
+    "pages/tasks/task/task",
     "pages/statistics/statistics",
     "pages/messages/messages",
     "pages/serves/index/index",
@@ -18,20 +20,24 @@
     "selectedColor": "#409e35",
     "list": [
       {
+        "pagePath": "pages/tasks/index/index",
+        "text": "任务"
+      },
+      {
         "pagePath": "pages/statistics/statistics",
-        "text": "统计数据"
+        "text": "统计"
       },
       {
         "pagePath": "pages/serves/index/index",
-        "text": "服务列表"
+        "text": "服务"
       },
       {
         "pagePath": "pages/messages/messages",
-        "text": "消息通知"
+        "text": "消息"
       },
       {
         "pagePath": "pages/personal/personal",
-        "text": "个人中心"
+        "text": "我的"
       }
     ]
   }

@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "wxb9cb3ffda84fc9ac",
+	"appid": "wx25a9d82a60098e4b",
 	"projectname": "serve",
 	"isGameTourist": false,
 	"condition": {
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -52,6 +52,23 @@
 					"name": "serves/index",
 					"pathName": "pages/serves/detail/detail",
 					"query": "serveid=1"
+				},
+				{
+					"id": -1,
+					"name": "task/index",
+					"pathName": "pages/tasks/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "task/index",
+					"pathName": "pages/tasks/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "task/index",
+					"pathName": "pages/messages/messages"
 				}
 			]
 		}

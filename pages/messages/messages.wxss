@@ -1,1 +1,18 @@
 /* pages/messages/messages.wxss */
+
+.chat-time{
+  font-size: 10px;
+  /* float: right; */
+}
+
+.contact-name{
+  display: block; 
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weui-cell__ft{
+  padding-left: 30px;
+  display: flex;
+}

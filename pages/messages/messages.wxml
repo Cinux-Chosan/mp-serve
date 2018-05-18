@@ -1,2 +1,18 @@
 <!--pages/messages/messages.wxml-->
-<text>pages/messages/messages.wxml</text>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell" hover-class="weui-cell_active">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+      <image src="https://posts-1256188574.cos.ap-chengdu.myqcloud.com/app-ember/images/author-info/me-8293a9d56f51af5b03a601e798f34502.jpg" style="width: 50px; height: 50px; display: block" />
+      <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">10</view>
+    </view>
+    <view class="weui-cell__bd overflow-hidden">
+      <view class="ellipsis">
+        联系人名称联系人名称联系人名称联系人名称
+      </view>
+      <view class="ellipsis" style="font-size: 13px;color: #888888;">摘要信息摘要信息要信息摘信息摘要信息摘要信息摘要信息摘息     </view>
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">
+        <text class="chat-time">15:48</text>
+    </view>
+  </view>
+</view>

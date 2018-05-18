@@ -1,5 +1,4 @@
 /**app.wxss**/
-
 @import './statics/css/iconfont.wxss';
 @import './statics/css/weui.wxss';
 
@@ -11,45 +10,57 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
 
-
-
-
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-all-center{
+.flex-all-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-start-center{
+.flex-start-center {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.flex-center-start{
+.flex-center-start {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
-.color-eee{
+.color-eee {
   color: #ccc;
 }
 
-page{
+page {
   background: #eee;
 }
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-hidden{
+  overflow: hidden !important;
 }

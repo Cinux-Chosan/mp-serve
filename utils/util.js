@@ -14,6 +14,21 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+
+function promisify(fn) {
+  return function (data) {
+    return new Promise((res, rej) => {
+      fn({ ...data, success: res, fail: rej });
+    });
+  }
+}
+
+const chooseLocation = promisify(wx.chooseLocation);
+const openLocation = promisify(wx.openLocation);
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  promisify,
+  chooseLocation,
+  openLocation
 }
