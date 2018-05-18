@@ -1,0 +1,4 @@
+/* pages/tasks/index/index.wxss */
+.weui-form-preview{
+    margin-bottom: 25px;
+}
